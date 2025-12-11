@@ -6,7 +6,7 @@ html, body{
     top: 0;
     left: 0;
     width: 100%;
-    background: gray;
+    background: rgb(157, 165, 206);
     padding: 15px 40px;
     z-index: 2000;
     display: flex;
