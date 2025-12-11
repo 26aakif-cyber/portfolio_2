@@ -6,23 +6,24 @@ html, body{
     top: 0;
     left: 0;
     width: 100%;
-    background: transparent;
+    background: gray;
     padding: 15px 40px;
     z-index: 2000;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    ;
 }
 .navbar ul{
     list-style: none;
     display: flex;
     gap: 30px;
     color: rgb(4, 15, 73);
-    font-family: 'Inter', 'Poppins', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: right;
+    align-items: right;
 }
 .navbar a {
     color:white;
@@ -31,4 +32,15 @@ html, body{
 }
 h1{
     background-position: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
+.about-me p{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    font-family:'Times New Roman', Times, serif
 }
