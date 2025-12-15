@@ -1,8 +1,12 @@
-html, body{
-    height:100%;
+html, body {
+    height: 100%;
+    margin: 0;
 }
-.navbar{
-    position:absolute;
+html{
+    scroll-behavior: smooth;
+}
+.navbar {
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -10,37 +14,84 @@ html, body{
     padding: 15px 40px;
     z-index: 2000;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-    ;
 }
-.navbar ul{
+
+.navbar ul {
     list-style: none;
     display: flex;
     gap: 30px;
-    color: rgb(4, 15, 73);
     font-family: 'Times New Roman', Times, serif;
     font-size: 16px;
-    display: flex;
-    justify-content: right;
-    align-items: right;
+    margin: 0;
+    padding: 0;
 }
+
+
 .navbar a {
-    color:white;
+    color: white;
     text-decoration: none;
     font-weight: bold;
 }
-h1{
+
+.experience {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../sasuke.jpg);
+    background-size: cover;
     background-position: center;
-    display:flex;
+    background-repeat: no-repeat;
+    display: flex;
     justify-content: center;
     align-items: center;
-    height: 20vh;
 }
-.about-me p{
-    display:flex;
+
+.experience h1 {
+    color: white;
+    font-size: 2rem;
+    text-shadow: 2px 2px 12px rgba(0,0,0,0.7);
+
+}
+
+.about-me {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../naruto-concept-art-7680x4320.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
     justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    font-family:'Times New Roman', Times, serif
+}
+
+.experience,
+.about-me,
+.skills {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;      
+    justify-content: flex-start; 
+    align-items: center;
+    padding-top: 120px; 
+}
+
+.about-me p {
+    max-width: 800px;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.6;
+}
+.skills{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../itachi.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
