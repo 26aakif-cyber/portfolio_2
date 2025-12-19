@@ -105,7 +105,7 @@ html{
    line-height: 1.6;
    font-family: Verdana, Geneva, Tahoma, sans-serif;
    padding-left: 40px;
-    text-shadow: 2px 2px #e7a5a5;
+   text-shadow: 2px 2px #e7a5a5;
 }
 .skills{
    height: 100vh;
@@ -117,4 +117,9 @@ html{
    display: flex;
    justify-content: center;
    align-items: center;
+}
+.contact{
+   background:rgb(255, 255, 255);
+   height:50vh;
+   width:100%;
 }
