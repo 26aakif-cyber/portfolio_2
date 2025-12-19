@@ -8,9 +8,11 @@ html, body {
    height: 100%;
    margin: 0;
 }
+
 html{
    scroll-behavior: smooth;
 }
+
 .navbar {
    position: fixed;
    top: 0;
@@ -33,16 +35,17 @@ html{
    list-style: none;
    display: flex;
    gap: 30px;
-   font-family: 'Times New Roman', Times, serif;
-   font-size: 16px;
+   font-family:Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 13px;
    margin: 0;
    padding: 0;
 }
 
 .navbar a {
-   color: rgb(14, 145, 233);
+   color: rgb(255, 255, 255);
    text-decoration: none;
    font-weight: bold;
+
    
 }
 
@@ -98,8 +101,11 @@ html{
 .about-me p {
    max-width: 800px;
    margin: auto;
-   font-size: 18px;
+   font-size: 20px;
    line-height: 1.6;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   padding-left: 40px;
+    text-shadow: 2px 2px #e7a5a5;
 }
 .skills{
    height: 100vh;
@@ -112,5 +118,3 @@ html{
    justify-content: center;
    align-items: center;
 }
-
-
