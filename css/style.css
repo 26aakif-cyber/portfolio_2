@@ -15,20 +15,18 @@ html{
 .about-me h1,
 .experience h1,
 .skills h1 {
-    font-family: "Federant", serif;
-  font-weight: 400;
-  font-style: normal;
-   font-size: 3rem;
-}
-.experience h1 {
-   color: white;
-   font-size: 2rem;
-   text-shadow: 2px 2px 12px rgba(0,0,0,0.7);
-   font-family: "Federant", serif;
+    font-family: "Bungee Spice", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 3rem;
-
+}
+.experience h1 {
+   color: white;
+   font-size: 3rem;
+   text-shadow: 2px 2px 12px rgba(0,0,0,0.7);
+   font-family: "Bungee Spice", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .navbar {
@@ -124,9 +122,10 @@ html{
    margin: auto;
    font-size: 20px;
    line-height: 1.6;
-   font-family: Verdana, Geneva, Tahoma, sans-serif;
    padding-left: 40px;
-   text-shadow: 2px 2px #e7a5a5;
+   font-family: "Federant", serif;
+   font-weight: 300;
+   font-style: normal;
 }
 .skills{
    height: 100vh;
