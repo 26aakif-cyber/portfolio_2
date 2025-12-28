@@ -106,7 +106,7 @@ html{
    padding-top: 120px;
 }
 
-
+/* text about me */
 .about-me p {
    max-width: 800px;
    margin: auto;
@@ -127,17 +127,26 @@ html{
    justify-content: center;
    align-items: center;
 }
-
+/* contact section */
 .contact{
-   background:rgb(252, 252, 252);
+   background-color:rgb(44, 30, 30);
    height:10vh;
    width:100%;
-   padding: 20px;
-   padding-right: 40px;
    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
    
 }
 
+/*padding for the text in email */
+.contact, a {
+   color: white;
+   text-decoration: none;
+   font-weight: bold;
+   text-shadow: 2px 2px 12px rgba(0,0,0,0.7);
+   padding-top: 20px;
+   padding-bottom: 20px;
+   padding-left: 50px;
+   padding-right: 50px;
+}
 .about-me,
 .experience,
 .skills {
@@ -151,7 +160,7 @@ html{
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.47);
+    background: rgba(16, 7, 7, 0.47);
     z-index: 1;
 }
 .about-me h1,
@@ -162,4 +171,41 @@ html{
     position: relative;
     z-index: 2;
     color: white;
+    
+}
+/* skills image container */
+.skills-container {
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap; /* responsive */
+    justify-content: center;
+    z-index: 2;
+}
+
+/* skill images */
+.skills-container img {
+    width: 160px;
+    height: 160px;
+    object-fit: contain;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease;
+    backdrop-filter: blur(8px);
+}
+/* hover effect */
+.skills-container img:hover {
+    transform: translateY(-8px) scale(1.05);
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* click thing */
+.skills-container img:active {
+    transform: scale(0.95);
 }
