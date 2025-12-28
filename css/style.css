@@ -83,17 +83,44 @@ html{
 
 
 .experience {
-   height: 100vh;
-   width: 100%;
-   background-image: url(../sasuke.jpg);
-   background-size: cover;
-   background-position: center;
-   background-repeat: no-repeat;
-   display: flex;
-   justify-content: center;
-   align-items: center;
+   position: relative; /* add this */
+    height: 100vh;
+    width: 100%;
+    background-image: url(../sasuke.jpg); /* make sure this path is correct */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 120px;
 }
-
+.experience::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(16, 7, 7, 0.47);
+    z-index: 1; 
+}
+.experience h1,
+.experience p {
+    position: relative;
+    z-index: 2;
+    color: rgb(249, 248, 248);
+    text-align: center;
+}
+.experience p {
+    max-width: 800px;
+    margin: 20px auto;
+    font-size: 20px;
+    line-height: 1;
+    padding-top: 30px;
+    font-family: "Federant", serif;
+    font-weight: 300;
+    font-style: normal;
+    text-shadow: 2px 2px 12px rgba(0,0,0,0.7);
+}
 
 
 .about-me {
