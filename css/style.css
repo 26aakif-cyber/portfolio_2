@@ -12,6 +12,24 @@ html, body {
 html{
    scroll-behavior: smooth;
 }
+.about-me h1,
+.experience h1,
+.skills h1 {
+    font-family: "Federant", serif;
+  font-weight: 400;
+  font-style: normal;
+   font-size: 3rem;
+}
+.experience h1 {
+   color: white;
+   font-size: 2rem;
+   text-shadow: 2px 2px 12px rgba(0,0,0,0.7);
+   font-family: "Federant", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3rem;
+
+}
 
 .navbar {
    position: fixed;
@@ -74,12 +92,6 @@ html{
 }
 
 
-.experience h1 {
-   color: white;
-   font-size: 2rem;
-   text-shadow: 2px 2px 12px rgba(0,0,0,0.7);
-}
-
 
 .about-me {
    height: 100vh;
@@ -126,6 +138,7 @@ html{
    display: flex;
    justify-content: center;
    align-items: center;
+
 }
 /* contact section */
 .contact{
@@ -173,17 +186,15 @@ html{
     color: white;
     
 }
-/* skills image container */
 .skills-container {
     display: flex;
     gap: 30px;
     margin-top: 40px;
-    flex-wrap: wrap; /* responsive */
+    flex-wrap: wrap; 
     justify-content: center;
     z-index: 2;
 }
 
-/* skill images */
 .skills-container img {
     width: 160px;
     height: 160px;
@@ -194,18 +205,16 @@ html{
     cursor: pointer;
     transition: 
         transform 0.3s ease,
-        box-shadow 0.3s ease,
-        background 0.3s ease;
-    backdrop-filter: blur(8px);
+        box-shadow 0.3s ease;
+    backdrop-filter: blur(10px);
 }
-/* hover effect */
+
 .skills-container img:hover {
     transform: translateY(-8px) scale(1.05);
     background: rgba(255, 255, 255, 0.3);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
 }
 
-/* click thing */
 .skills-container img:active {
     transform: scale(0.95);
 }
